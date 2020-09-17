@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap'); */
+
+@import url('https://max.pub/css/base.css');
+@import url('https://max.pub/css/inconsolata.css');
+
+html{background:#222;}
+frac-tion{
+	--line-color: #555;
+}
+[type=int],
+[type=float],
+[type=rank] {
+	text-align: right;
+	/* font-weight: bold; */
+	font-family: inconsolata;
+	font-weight: 300;
+}
+
+th,
+td {
+	color: #eee;
+	/* border: 1px solid #000; */
+	padding: .1rem .5rem;
+}
+tr:nth-child(2n+4){
+	background:#292929
+}
+table {
+	border-collapse: collapse;
+	counter-reset: rank;
+	margin: 0 auto;
+}
+
+th {
+	text-align: center !important;
+	font-weight: 400;
+	/* background: #333 */
+	color: #aaf
+}
+
+/* [sorted=asc] icon::before{content: '\2191'} */
+/* [sorted=desc] icon::before{content: '\2193'} */
+[sort-direction=desc]::after {
+	content: '\25bc'
+}
+
+[sort-direction=asc]::after {
+	content: '\25b2'
+}
+
+tr:first-child>th {
+	cursor: pointer;
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	background: #222;
+	/* border: 1px solid silver; */
+}
+
+tr:hover {
+	background: #333;
+	/* cursor: pointer; */
+}
+th:hover{
+	color: #55f;
+	cursor: pointer;
+}
+/* infinity::before{text-align:center; font-size: 50px; content: '\221E'} */
+[sort=Infinity] {
+	text-align: center;
+	font-size: 20px;
+}
+
+[type=rank] {
+	counter-increment: rank;
+}
+
+[type=rank]::after {
+	content: counter(rank);
+}
+
+.units {
+	color: gray;
+}

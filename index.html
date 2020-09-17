@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="style.css">
+
+<table>
+	<tr>
+		<th >rank</th>
+		<th sort='string'>country</th>
+
+		<th sort='number'>pollution</th>
+		<th sort='number'>forest</th>
+		<th sort='number'>population</th>
+		<th sort='number'>GDP</th>
+		<th sort='number'>area</th>
+
+		<!-- <th type='float'>po/fo</th> -->
+		<th sort='number'><frac-tion n='pollution' d='forest'></frac-tion></th>
+		<th sort='number'><frac-tion n='pollution' d='dollar'></frac-tion></th>
+		<th sort='number'><frac-tion n='pollution' d='person'></frac-tion></th>
+
+		<th sort='number'><frac-tion n='people' d='area'></frac-tion></th>
+		<th sort='number'><frac-tion n='gdp' d='person'></frac-tion></th>
+		<!-- <th type='int'>gdp/area</th> -->
+		<th sort='number'><frac-tion n='forest' d='area'></frac-tion></th>
+		<th sort='number'>payment</th>
+
+	</tr>
+	<!-- &#8239; THIN SPACE     put this between decimal places -->
+	<tr class='units'>
+		<th></th>
+		<th></th>
+
+		<th><frac-tion n='mega tons' d='year'></frac-tion></th>
+		<th>1000 km&sup2;</th>
+		<th>million</th>
+		<th><frac-tion n='billion $' d='year'></frac-tion></th>
+		<th>1000 km&sup2;</th>
+
+		<!-- <th>in kt/y/km&sup2; <br/>= kg/y/m&sup2;</th> -->
+		<!-- <br/>= g/m&sup2; -->
+		<th><frac-tion n='tons' d='km&sup2;'></frac-tion> </th>
+		<th><frac-tion n='gram' d='$'></frac-tion> </th>
+		<th><frac-tion n='tons' d='person'></frac-tion> </th>
+
+		<th><frac-tion n='1' d='km&sup2;'></frac-tion> </th>
+		<th><frac-tion n='$' d='person'></frac-tion> </th>
+		<!-- <th>in $/km&sup2;</th> -->
+		<th>%</th>
+		<th><frac-tion n='million $' d='year'></frac-tion></th>
+	</tr>
+</table>
+
+
+
+<script src='script.js'></script>
+<script src='../lib/sort-table.js'></script>
+<script src='../lib/frac-tion.tag.js'></script>
